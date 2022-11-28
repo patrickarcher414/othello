@@ -2,6 +2,8 @@
   --bg-main: hsl(122, 37%, 20%);
   --tile-bg: hsl(122, 37%, 25%);
   --hover: hsl(122, 37%, 30%);
+  --white: hsl(37, 75%, 89%);
+  --black: hsl(37, 10%, 10%);
 }
 
 body {
@@ -11,9 +13,10 @@ body {
 
 .container {
   margin-top: 10vh;
-  margin-left: 10vw;
-  margin-right: 10vw;
-  height: 80vh;
+  margin-left: auto;
+  margin-right: auto;
+  height: 300px;
+  width: 300px;
   display: grid;
   grid-template: repeat(8, auto) / repeat(8, auto);
   gap: 2px;
@@ -26,4 +29,14 @@ body {
 
 .tile:hover {
   background-color: var(--hover);
+}
+
+.white {
+  border-radius: 50%;
+  background-color: var(--white);
+}
+
+.black {
+  border-radius: 50%;
+  background-color: var(--black);
 }
