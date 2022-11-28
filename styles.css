@@ -1,0 +1,29 @@
+:root {
+  --bg-main: hsl(122, 37%, 20%);
+  --tile-bg: hsl(122, 37%, 25%);
+  --hover: hsl(122, 37%, 30%);
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg-main);
+}
+
+.container {
+  margin-top: 10vh;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  height: 80vh;
+  display: grid;
+  grid-template: repeat(8, auto) / repeat(8, auto);
+  gap: 2px;
+}
+
+.tile {
+  background-color: var(--tile-bg);
+  border: none;
+}
+
+.tile:hover {
+  background-color: var(--hover);
+}
