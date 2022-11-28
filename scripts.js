@@ -1,6 +1,8 @@
-const tileElement = document.getElementById(".tile");
-tileElement.addEventListener("click", handleClick);
 
-function handleClick() {
-  tileElement.classList.add("white");
+const onClick = (event) => {
+  if (event.target.nodeName === "BUTTON") {
+    console.log(event.target.id);
+  }
 }
+
+window.addEventListener('click', onClick);
