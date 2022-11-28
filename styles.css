@@ -3,7 +3,9 @@
   --tile-bg: hsl(122, 37%, 25%);
   --hover: hsl(122, 37%, 30%);
   --white: hsl(37, 75%, 89%);
+  --white-hover: hsl(36, 31%, 77%);
   --black: hsl(37, 10%, 10%);
+  --black-hover: hsl(38, 11%, 20%);
 }
 
 body {
@@ -36,7 +38,15 @@ body {
   background-color: var(--white);
 }
 
+.white:hover {
+  background-color: var(--white-hover);
+}
+
 .black {
   border-radius: 50%;
   background-color: var(--black);
+}
+
+.black:hover {
+  background-color: var(--black-hover);
 }
